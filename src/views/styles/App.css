@@ -1,0 +1,7 @@
+:root {
+    --darkGreen: #797D62;
+}
+
+body {
+    background-color: var(--darkGreen);
+}
