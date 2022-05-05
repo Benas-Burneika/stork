@@ -1,7 +1,8 @@
-:root {
-    --darkGreen: #797D62;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    background-color: var(--darkGreen);
+.App {
+    color: whitesmoke;
 }
