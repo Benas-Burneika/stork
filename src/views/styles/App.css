@@ -6,3 +6,16 @@
 .App {
     color: whitesmoke;
 }
+
+.canvas {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .canvas {
+        grid-template-columns: repeat(1, 100%)
+    }
+}

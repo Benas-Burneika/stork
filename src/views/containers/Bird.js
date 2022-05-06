@@ -4,9 +4,10 @@ import { css } from "@emotion/css";
 
 // Components
 import Navigator from "../components/Navigator";
+import BirdCanvas from "../components/BirdCanvas";
 
 // Helpers
-import { backgroundArray, birdArray } from "../../config";
+import { backgroundArray, birdArray, birdNames } from "../../config";
 
 const Bird = () => {
     const [birdIndex, setBird] = useState(0);
@@ -44,6 +45,12 @@ const Bird = () => {
         min-height: 100vh;
     `;
 
+    const birdName = css`
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    `;
+
     return (
         <div className={bird}>
             <header className="header">
@@ -51,10 +58,10 @@ const Bird = () => {
                 <div>Burgeris</div>
                 {/* <BurgerMenu /> */}
             </header>
-            <div>
-                {/* <Breadcrumb />
-                <PaukscioCanvas /> */}
-                <h1>{currentBird}</h1>
+            <BirdCanvas currentBird={ currentBird } />
+            <div className={ birdName }>
+                {/* <Breadcrumb /> */}
+                <h1>{birdNames[birdIndex]}</h1>
 
             </div>
             <Navigator 
