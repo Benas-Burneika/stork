@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/stork/static/css/main.d626f795.css",
+    "main.js": "/stork/static/js/main.9244fc9a.js",
+    "static/media/kalakutas.svg": "/stork/static/media/kalakutas.9607c028ab4d84ab6007f7ca5f787447.svg",
+    "static/media/peleda.svg": "/stork/static/media/peleda.dc56dd11889a04fc46a25ba67b1590a4.svg",
+    "static/media/erelis.svg": "/stork/static/media/erelis.f02108676ef7826e576d62091ac075c0.svg",
+    "static/media/kekstas.svg": "/stork/static/media/kekstas.59fb578dce522662cefda40303d69abb.svg",
+    "static/media/zyle.svg": "/stork/static/media/zyle.2c8d526b1213c7a50bea0195240c3f00.svg",
+    "static/media/gandras.svg": "/stork/static/media/gandras.b60ac8c885710b1b872a2f0aff605a80.svg",
+    "static/media/gulbe.svg": "/stork/static/media/gulbe.4f805caa40352a62f87d6d9514815868.svg",
+    "static/media/varna.svg": "/stork/static/media/varna.47f1b5bd5bbea591a8c0c2cc18ddcb87.svg",
+    "static/media/tulzys.svg": "/stork/static/media/tulzys.cd3b6c09ca67de62a296d6e0b72de2d0.svg",
+    "index.html": "/stork/index.html",
+    "static/media/Close.svg": "/stork/static/media/Close.434aeae14a6dd6f41d11ede4f60c4e59.svg",
+    "static/media/Logo.svg": "/stork/static/media/Logo.c5b576efc272be22ef6071b82671f9f2.svg",
+    "main.d626f795.css.map": "/stork/static/css/main.d626f795.css.map",
+    "main.9244fc9a.js.map": "/stork/static/js/main.9244fc9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d626f795.css",
+    "static/js/main.9244fc9a.js"
+  ]
+}
