@@ -1,7 +1,7 @@
 import { css } from "@emotion/css";
 import PropTypes from "prop-types";
 
-const Navigator = ({ handleOnNextClick, handleOnBackClick }) => {
+const Navigator = ({ handleOnNextClick, handleOnBackClick, mainColor }) => {
     const navigator = css`
         width: 200px;
         margin: 0 auto;
@@ -45,7 +45,7 @@ const Navigator = ({ handleOnNextClick, handleOnBackClick }) => {
         outline: inherit;
         border: none;
         font-size: 24px;
-        color: #797D62;
+        color: ${mainColor};
     `;
 
     return (
@@ -60,6 +60,7 @@ const Navigator = ({ handleOnNextClick, handleOnBackClick }) => {
 Navigator.propTypes = {
     handleOnNextClick: PropTypes.func.isRequired,
     handleOnBackClick: PropTypes.func.isRequired,
+    mainColor: PropTypes.string.isRequired,
 }
 
 export default Navigator;
