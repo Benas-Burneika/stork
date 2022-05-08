@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="inherit" height="inherit" viewBox="100 100 1000 1000" shape-rendering="crispEdges">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 100 1000 1000" shape-rendering="crispEdges">
 <polygon points="629,628 640,638 641,628" style="fill:rgb(152,146,143)"/>
 <polygon points="629,628 631,644 640,638" style="fill:rgb(174,169,166)"/>
 <polygon points="640,638 657,619 641,628" style="fill:rgb(62,59,57)"/>
