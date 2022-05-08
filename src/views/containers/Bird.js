@@ -8,12 +8,22 @@ import BirdCanvas from "../components/BirdCanvas";
 
 // Helpers
 import { backgroundArray, birdArray, birdNames, mainColorArray } from "../../config";
+import Logo from '../../assets/Logo.svg';
 
 const Bird = () => {
     const [birdIndex, setBird] = useState(0);
     const [mainColor, setColor] = useState(mainColorArray[birdIndex]);
+    const [showModal, setModal] = useState(false);
     const [background, setBackground] = useState(backgroundArray[birdIndex]);
     let currentBird = birdArray[birdIndex];
+
+    function handleOpenModal () {
+        setModal(true);
+    } 
+
+    function handleCloseModal () {
+        setModal(false);
+    } 
 
     function handleOnNextClick() {
         if (birdIndex !== birdArray.length - 1) {
@@ -55,6 +65,16 @@ const Bird = () => {
         margin: 10px;
     `;
 
+    const logo = css`
+        display: flex;
+        align-items: center;
+
+        img {
+            transform: scale(0.5);
+            filter: brightness(0) invert(1);
+        }
+    `;
+
     const mainContent = css`
         display: flex;
         flex-direction: column;
@@ -73,7 +93,10 @@ const Bird = () => {
     return (
         <div className={container}>
             <header className={header}>
-                <h1>Gandras</h1>
+                <div className={logo}>
+                    <img src={Logo} alt="Logo" />
+                    <h1>Gandras</h1>
+                </div>
                 <h1>=</h1>
             </header>
             <main className={ mainContent }>
@@ -83,7 +106,12 @@ const Bird = () => {
                 <Navigator 
                     handleOnBackClick={ handleOnBackClick }
                     handleOnNextClick={ handleOnNextClick }
+                    handleOpenModal={ handleOpenModal }
+                    handleCloseModal={ handleCloseModal }
                     mainColor={mainColor}
+                    showModal={showModal}
+                    currentBird={ currentBird }
+                    currentBirdName={ birdNames[birdIndex] }
                 />
                 <div className={music}>
                     <h1>♫</h1>

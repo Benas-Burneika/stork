@@ -1,7 +1,22 @@
 import { css } from "@emotion/css";
 import PropTypes from "prop-types";
+import Modal from "react-modal";
 
-const Navigator = ({ handleOnNextClick, handleOnBackClick, mainColor }) => {
+// Components
+import ModalInfo from "../containers/ModalInfo";
+
+const Navigator = (
+    { 
+        handleOnNextClick, 
+        handleOnBackClick, 
+        mainColor, 
+        showModal, 
+        handleOpenModal, 
+        handleCloseModal, 
+        currentBird, 
+        currentBirdName 
+    }) => {
+    Modal.setAppElement('#root');
     const navigator = css`
         width: 200px;
         margin: 0 auto;
@@ -48,10 +63,20 @@ const Navigator = ({ handleOnNextClick, handleOnBackClick, mainColor }) => {
         color: ${mainColor};
     `;
 
+    const customStyles = {
+        content: {
+          background: '#5E5E5E',
+          color: 'whitesmoke'
+        },
+      };
+
     return (
         <div className={navigator}>
             <button className={back} onClick={handleOnBackClick} />
-            <button className={info}>?</button>
+            <button className={info} onClick={handleOpenModal}>?</button>
+            <Modal isOpen={showModal} onRequestClose={handleCloseModal} contentLabel="Info Modal" style={customStyles}>
+                <ModalInfo currentBird={ currentBird } handleCloseModal={handleCloseModal} currentBirdName={currentBirdName}/>
+            </Modal>
             <button className={next} onClick={handleOnNextClick} />
         </div>
     )
@@ -60,7 +85,12 @@ const Navigator = ({ handleOnNextClick, handleOnBackClick, mainColor }) => {
 Navigator.propTypes = {
     handleOnNextClick: PropTypes.func.isRequired,
     handleOnBackClick: PropTypes.func.isRequired,
+    handleOpenModal: PropTypes.func.isRequired,
+    handleCloseModal: PropTypes.func.isRequired,
     mainColor: PropTypes.string.isRequired,
+    showModal: PropTypes.bool.isRequired,
+    currentBird: PropTypes.string.isRequired,
+    currentBirdName: PropTypes.string,
 }
 
 export default Navigator;
