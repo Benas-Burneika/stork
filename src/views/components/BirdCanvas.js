@@ -9,7 +9,7 @@ import { ReactComponent as Peleda } from "../../assets/peleda.svg";
 import { ReactComponent as Tulzys } from "../../assets/tulzys.svg";
 import { ReactComponent as Varna } from "../../assets/varna.svg";
 import { ReactComponent as Zyle } from "../../assets/zyle.svg";
-function BirdCanvas({ currentBird }) {
+function BirdCanvas({ currentBird, handleOpenModal, playPop }) {
   const components = {
     gandras: Gandras,
     erelis: Erelis,
@@ -66,23 +66,28 @@ const canvas = css`
 
 const mainImage = css`
   max-height: 70vh;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%);
   transition: .2s ease-in-out 0s;
   &:hover {
-      transform: scale(0.95);
+    transform: scale(0.95);
   }
 `;
 
   return (
     <div className={canvas}>
       {/* <div className={backgroundLight}/> */}
-      <SelectedBird className={mainImage} />
-      {/* <div className={shadow} /> */}
+      <SelectedBird className={mainImage} onClick={() => {
+        handleOpenModal();
+        playPop();
+      }}/>
     </div>
   );
 }
 
 BirdCanvas.propTypes = {
   currentBird: PropTypes.string.isRequired,
+  handleOpenModal: PropTypes.func.isRequired,
+  playPop: PropTypes.func.isRequired,
 }
 
 export default BirdCanvas;
