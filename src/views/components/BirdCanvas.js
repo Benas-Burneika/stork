@@ -66,16 +66,10 @@ const canvas = css`
 
 const mainImage = css`
   max-height: 70vh;
-  :after {
-    content: '';
-    position: absolute;
-    bottom: 0%;
-    left: 5%;
-    width: 90%;
-    height: 8%;
-    border-radius: 50%;
-    box-shadow: 0px 10px 5px black;
-}
+  transition: .2s ease-in-out 0s;
+  &:hover {
+      transform: scale(0.95);
+  }
 `;
 
   return (

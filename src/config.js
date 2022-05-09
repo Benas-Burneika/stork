@@ -1,3 +1,5 @@
+import { css } from "@emotion/css";
+
 export const birdArray = ['gandras', 'erelis', 'peleda', 'zyle', 'gulbe', 'kalakutas', 'tulzys', 'kekstas', 'varna'];
 export const mainColorArray = ['#9ec26a', '#96a1ff', '#7462a8', '#54a84e', '#86cbff', '#8a8aff', '#85d195', '#d5a99a', '#baaec2'];
 export const backgroundArray = [
@@ -19,3 +21,16 @@ export const customModalStyles = {
         color: 'whitesmoke'
     },
 };
+
+export const btn_animation = css`
+    transition: .2s ease-in-out 0s;
+    &:hover {
+        transform: scale(1.25);
+    }
+    &:active {
+        transform: scale(1);
+        &:after {
+            transform: scale(0);
+        }
+    }
+`;

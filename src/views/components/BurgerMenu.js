@@ -5,6 +5,9 @@ import PropTypes from "prop-types";
 import {ReactComponent as Logo} from '../../assets/btn-logo.svg';
 import {ReactComponent as Close} from '../../assets/btn-close.svg';
 
+// Helpers
+import { btn_animation } from "../../config";
+
 function BurgerMenu({handleCloseModalBurger, mainColor}) {
     const container = css`
       display: flex;
@@ -22,6 +25,7 @@ function BurgerMenu({handleCloseModalBurger, mainColor}) {
     padding: 0;
     cursor: pointer;
     outline: inherit;
+    ${btn_animation}
   `;
 
   const modalLogoContainer = css`

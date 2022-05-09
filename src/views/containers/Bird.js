@@ -10,9 +10,10 @@ import BurgerMenu from "../components/BurgerMenu";
 import AudioPlayer from "../components/AudioPlayer";
 
 // Helpers
-import { backgroundArray, birdArray, birdNames, mainColorArray, customModalStyles } from "../../config";
+import { backgroundArray, birdArray, birdNames, mainColorArray, customModalStyles, btn_animation } from "../../config";
 import Logo from '../../assets/btn-logo-white.svg';
 import Burger from '../../assets/btn-burger.svg';
+import Pop from '../../assets/sfx/pop.mp3';
 
 const Bird = () => {
     const [birdIndex, setBird] = useState(0);
@@ -21,6 +22,7 @@ const Bird = () => {
     const [showModalBurger, setModalBurger] = useState(false);
     const [background, setBackground] = useState(backgroundArray[birdIndex]);
     let currentBird = birdArray[birdIndex];
+    let pop = new Audio(Pop)
 
     function handleOpenModal () {
         setModal(true);
@@ -63,6 +65,11 @@ const Bird = () => {
     const setStyle = (index) => {
         setColor(mainColorArray[index]);
         setBackground(backgroundArray[index]);
+    }
+
+    const playPop = () => {
+        pop.volume = 0.3;
+        pop.play()
     }
 
     const container = css`
@@ -111,6 +118,7 @@ const Bird = () => {
         border: none;
         font-size: 24px;
         color: ${mainColor};
+        ${btn_animation};
     `;
 
     return (
@@ -120,7 +128,10 @@ const Bird = () => {
                     <img src={Logo} alt="Logo" />
                     <h1>Gandras</h1>
                 </div>
-                <button className={burger} onClick={handleOpenModalBurger}>
+                <button className={burger} onClick={() => {
+                    handleOpenModalBurger(); 
+                    playPop();
+                }}>
                     <img src={Burger} alt="Burger" />
                 </button>
                 <Modal isOpen={showModalBurger} onRequestClose={handleCloseModalBurger} contentLabel="Burger Modal" style={customModalStyles}>
@@ -140,6 +151,7 @@ const Bird = () => {
                     showModal={showModal}
                     currentBird={ currentBird }
                     currentBirdName={ birdNames[birdIndex] }
+                    playPop={ playPop }
                 />
                 <div className={music}>
                     <AudioPlayer />
