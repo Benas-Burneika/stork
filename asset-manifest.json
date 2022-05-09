@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/stork/static/css/main.d626f795.css",
-    "main.js": "/stork/static/js/main.b9213cbe.js",
+    "main.js": "/stork/static/js/main.212c9c0e.js",
     "static/media/background-music.mp3": "/stork/static/media/background-music.1a1d266f2c39fae723b6.mp3",
     "static/media/kalakutas.svg": "/stork/static/media/kalakutas.9607c028ab4d84ab6007f7ca5f787447.svg",
     "static/media/peleda.svg": "/stork/static/media/peleda.dc56dd11889a04fc46a25ba67b1590a4.svg",
     "static/media/pop.mp3": "/stork/static/media/pop.e2e956cec8e665fdac87.mp3",
     "static/media/erelis.svg": "/stork/static/media/erelis.f02108676ef7826e576d62091ac075c0.svg",
     "static/media/kekstas.svg": "/stork/static/media/kekstas.e04a0fafaf94dd5adcffbd517b09e251.svg",
-    "static/media/zyle.svg": "/stork/static/media/zyle.2c8d526b1213c7a50bea0195240c3f00.svg",
+    "static/media/sniegena.svg": "/stork/static/media/sniegena.2c8d526b1213c7a50bea0195240c3f00.svg",
     "static/media/gandras.svg": "/stork/static/media/gandras.b60ac8c885710b1b872a2f0aff605a80.svg",
     "static/media/gulbe.svg": "/stork/static/media/gulbe.4f805caa40352a62f87d6d9514815868.svg",
     "static/media/varna.svg": "/stork/static/media/varna.47f1b5bd5bbea591a8c0c2cc18ddcb87.svg",
@@ -21,10 +21,10 @@
     "static/media/btn-logo-white.svg": "/stork/static/media/btn-logo-white.c5b576efc272be22ef6071b82671f9f2.svg",
     "static/media/btn-logo.svg": "/stork/static/media/btn-logo.2db2f0ccd293c384d79398edc27c7473.svg",
     "main.d626f795.css.map": "/stork/static/css/main.d626f795.css.map",
-    "main.b9213cbe.js.map": "/stork/static/js/main.b9213cbe.js.map"
+    "main.212c9c0e.js.map": "/stork/static/js/main.212c9c0e.js.map"
   },
   "entrypoints": [
     "static/css/main.d626f795.css",
-    "static/js/main.b9213cbe.js"
+    "static/js/main.212c9c0e.js"
   ]
 }
