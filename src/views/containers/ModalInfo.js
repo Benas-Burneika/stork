@@ -14,7 +14,7 @@ import Kekstas from "./Kekstas";
 import Peleda from "./Peleda";
 import Tulzys from "./Tulzys";
 import Varna from "./Varna";
-import Zyle from "./Zyle";
+import Sniegena from "./Sniegena";
 
 // Helpers
 import { btn_animation } from "../../config";
@@ -47,8 +47,8 @@ function ModalInfo({currentBird, handleCloseModal, currentBirdName, mainColor}) 
         case "varna":
             SelectedBird = Varna;
             break;
-        case "zyle":
-            SelectedBird = Zyle;
+        case "sniegena":
+            SelectedBird = Sniegena;
             break;
         default:
             break;

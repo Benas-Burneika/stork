@@ -8,7 +8,7 @@ import { ReactComponent as Kekstas } from "../../assets/kekstas.svg";
 import { ReactComponent as Peleda } from "../../assets/peleda.svg";
 import { ReactComponent as Tulzys } from "../../assets/tulzys.svg";
 import { ReactComponent as Varna } from "../../assets/varna.svg";
-import { ReactComponent as Zyle } from "../../assets/zyle.svg";
+import { ReactComponent as Sniegena } from "../../assets/sniegena.svg";
 function BirdCanvas({ currentBird, handleOpenModal, playPop }) {
   const components = {
     gandras: Gandras,
@@ -19,7 +19,7 @@ function BirdCanvas({ currentBird, handleOpenModal, playPop }) {
     peleda: Peleda,
     tulzys: Tulzys,
     varna: Varna,
-    zyle: Zyle,
+    sniegena: Sniegena,
   }
 
   let SelectedBird;
@@ -49,7 +49,7 @@ function BirdCanvas({ currentBird, handleOpenModal, playPop }) {
     case "varna":
       SelectedBird = components[currentBird];
       break;
-    case "zyle":
+    case "sniegena":
       SelectedBird = components[currentBird];
       break;
     default:
