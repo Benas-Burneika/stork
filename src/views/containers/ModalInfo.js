@@ -16,6 +16,9 @@ import Tulzys from "./Tulzys";
 import Varna from "./Varna";
 import Zyle from "./Zyle";
 
+// Helpers
+import { btn_animation } from "../../config";
+
 function ModalInfo({currentBird, handleCloseModal, currentBirdName, mainColor}) {
     let SelectedBird;
 
@@ -67,6 +70,7 @@ function ModalInfo({currentBird, handleCloseModal, currentBirdName, mainColor}) 
     padding: 0;
     cursor: pointer;
     outline: inherit;
+    ${btn_animation};
   `;
 
   const modalLogoContainer = css`

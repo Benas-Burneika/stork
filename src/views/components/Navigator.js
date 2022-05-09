@@ -6,7 +6,7 @@ import Modal from "react-modal";
 import ModalInfo from "../containers/ModalInfo";
 
 // Helpers
-import { customModalStyles } from "../../config";
+import { btn_animation, customModalStyles } from "../../config";
 
 const Navigator = (
     { 
@@ -17,9 +17,11 @@ const Navigator = (
         handleOpenModal, 
         handleCloseModal, 
         currentBird, 
-        currentBirdName 
+        currentBirdName,
+        playPop
     }) => {
     Modal.setAppElement('#root');
+
     const navigator = css`
         width: 200px;
         margin: 0 auto;
@@ -38,6 +40,7 @@ const Navigator = (
         padding: 0;
         cursor: pointer;
         outline: inherit;
+        ${btn_animation}
     `;
 
     const next = css`
@@ -51,6 +54,7 @@ const Navigator = (
         padding: 0;
         cursor: pointer;
         outline: inherit;
+        ${btn_animation}
     `;
 
     const info = css`
@@ -64,12 +68,19 @@ const Navigator = (
         border: none;
         font-size: 24px;
         color: ${mainColor};
+        ${btn_animation}
     `;
 
     return (
         <div className={navigator}>
-            <button className={back} onClick={handleOnBackClick} />
-            <button className={info} onClick={handleOpenModal}>?</button>
+            <button className={back} onClick={() => {
+                handleOnBackClick();
+                playPop();
+            }} />
+            <button className={info} onClick={() => {
+                handleOpenModal();
+                playPop();
+            }}>?</button>
             <Modal isOpen={showModal} onRequestClose={handleCloseModal} contentLabel="Info Modal" style={customModalStyles}>
                 <ModalInfo 
                     currentBird={ currentBird } 
@@ -78,7 +89,10 @@ const Navigator = (
                     mainColor={mainColor}
                 />
             </Modal>
-            <button className={next} onClick={handleOnNextClick} />
+            <button className={next} onClick={() => {
+                handleOnNextClick();
+                playPop();
+            }} />
         </div>
     )
 }
@@ -92,6 +106,7 @@ Navigator.propTypes = {
     showModal: PropTypes.bool.isRequired,
     currentBird: PropTypes.string.isRequired,
     currentBirdName: PropTypes.string,
+    playPop: PropTypes.func,
 }
 
 export default Navigator;

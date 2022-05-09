@@ -31,7 +31,7 @@ function AudioPlayer() {
 
   return (
     <div>
-        <audio ref={ref} src={backgroundMusic} />
+        <audio ref={ref} src={backgroundMusic} loop />
         {musicStatus ? (
             <button onClick={pauseMusic} className={btn_music}>
                 <MusicPlay />
