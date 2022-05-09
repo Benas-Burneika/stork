@@ -140,7 +140,7 @@ const Bird = () => {
             </header>
             <main className={ mainContent }>
                 {/* <h1>△△△△△△△△△△△△△</h1> */}
-                <BirdCanvas currentBird={ currentBird } />
+                <BirdCanvas currentBird={ currentBird } handleOpenModal={ handleOpenModal } playPop={ playPop } />
                 <h1>{birdNames[birdIndex]}</h1>
                 <Navigator 
                     handleOnBackClick={ handleOnBackClick }
