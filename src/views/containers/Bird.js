@@ -6,7 +6,8 @@ import Modal from "react-modal";
 // Components
 import Navigator from "../components/Navigator";
 import BirdCanvas from "../components/BirdCanvas";
-import ModalBurgerInfo from "./ModalBurgerInfo";
+import BurgerMenu from "../components/BurgerMenu";
+import AudioPlayer from "../components/AudioPlayer";
 
 // Helpers
 import { backgroundArray, birdArray, birdNames, mainColorArray, customModalStyles } from "../../config";
@@ -123,7 +124,7 @@ const Bird = () => {
                     <img src={Burger} alt="Burger" />
                 </button>
                 <Modal isOpen={showModalBurger} onRequestClose={handleCloseModalBurger} contentLabel="Burger Modal" style={customModalStyles}>
-                    <ModalBurgerInfo mainColor={mainColor} handleCloseModalBurger={handleCloseModalBurger}/>
+                    <BurgerMenu mainColor={mainColor} handleCloseModalBurger={handleCloseModalBurger}/>
                 </Modal>
             </header>
             <main className={ mainContent }>
@@ -141,7 +142,7 @@ const Bird = () => {
                     currentBirdName={ birdNames[birdIndex] }
                 />
                 <div className={music}>
-                    <h1>♫</h1>
+                    <AudioPlayer />
                 </div>
             </main>
         </div>
