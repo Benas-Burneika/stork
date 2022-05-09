@@ -1,19 +1,23 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { css } from "@emotion/css";
+import Modal from "react-modal";
 
 // Components
 import Navigator from "../components/Navigator";
 import BirdCanvas from "../components/BirdCanvas";
+import ModalBurgerInfo from "./ModalBurgerInfo";
 
 // Helpers
-import { backgroundArray, birdArray, birdNames, mainColorArray } from "../../config";
-import Logo from '../../assets/Logo.svg';
+import { backgroundArray, birdArray, birdNames, mainColorArray, customModalStyles } from "../../config";
+import Logo from '../../assets/btn-logo-white.svg';
+import Burger from '../../assets/btn-burger.svg';
 
 const Bird = () => {
     const [birdIndex, setBird] = useState(0);
     const [mainColor, setColor] = useState(mainColorArray[birdIndex]);
     const [showModal, setModal] = useState(false);
+    const [showModalBurger, setModalBurger] = useState(false);
     const [background, setBackground] = useState(backgroundArray[birdIndex]);
     let currentBird = birdArray[birdIndex];
 
@@ -23,6 +27,14 @@ const Bird = () => {
 
     function handleCloseModal () {
         setModal(false);
+    } 
+
+    function handleOpenModalBurger () {
+        setModalBurger(true);
+    } 
+
+    function handleCloseModalBurger () {
+        setModalBurger(false);
     } 
 
     function handleOnNextClick() {
@@ -90,6 +102,16 @@ const Bird = () => {
         width: 100%;
     `;
 
+    const burger = css`
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: inherit;
+        border: none;
+        font-size: 24px;
+        color: ${mainColor};
+    `;
+
     return (
         <div className={container}>
             <header className={header}>
@@ -97,7 +119,12 @@ const Bird = () => {
                     <img src={Logo} alt="Logo" />
                     <h1>Gandras</h1>
                 </div>
-                <h1>=</h1>
+                <button className={burger} onClick={handleOpenModalBurger}>
+                    <img src={Burger} alt="Burger" />
+                </button>
+                <Modal isOpen={showModalBurger} onRequestClose={handleCloseModalBurger} contentLabel="Burger Modal" style={customModalStyles}>
+                    <ModalBurgerInfo mainColor={mainColor} handleCloseModalBurger={handleCloseModalBurger}/>
+                </Modal>
             </header>
             <main className={ mainContent }>
                 {/* <h1>△△△△△△△△△△△△△</h1> */}
