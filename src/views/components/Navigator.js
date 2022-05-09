@@ -5,6 +5,9 @@ import Modal from "react-modal";
 // Components
 import ModalInfo from "../containers/ModalInfo";
 
+// Helpers
+import { customModalStyles } from "../../config";
+
 const Navigator = (
     { 
         handleOnNextClick, 
@@ -63,19 +66,17 @@ const Navigator = (
         color: ${mainColor};
     `;
 
-    const customStyles = {
-        content: {
-          background: '#5E5E5E',
-          color: 'whitesmoke'
-        },
-      };
-
     return (
         <div className={navigator}>
             <button className={back} onClick={handleOnBackClick} />
             <button className={info} onClick={handleOpenModal}>?</button>
-            <Modal isOpen={showModal} onRequestClose={handleCloseModal} contentLabel="Info Modal" style={customStyles}>
-                <ModalInfo currentBird={ currentBird } handleCloseModal={handleCloseModal} currentBirdName={currentBirdName}/>
+            <Modal isOpen={showModal} onRequestClose={handleCloseModal} contentLabel="Info Modal" style={customModalStyles}>
+                <ModalInfo 
+                    currentBird={ currentBird } 
+                    handleCloseModal={handleCloseModal} 
+                    currentBirdName={currentBirdName}
+                    mainColor={mainColor}
+                />
             </Modal>
             <button className={next} onClick={handleOnNextClick} />
         </div>

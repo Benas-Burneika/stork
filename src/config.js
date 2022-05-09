@@ -12,3 +12,10 @@ export const backgroundArray = [
     'radial-gradient(circle, rgba(186,174,194,1) 0%, rgba(156,146,163,1) 100%)',
 ];     
 export const birdNames = ['Gandras', 'Erelis', 'Pelėda', 'Zylė', 'Gulbė', 'Kalakutas', 'Tulžys', 'Kėkštas', 'Varna'];
+
+export const customModalStyles = {
+    content: {
+      background: '#5E5E5E',
+        color: 'whitesmoke'
+    },
+};
