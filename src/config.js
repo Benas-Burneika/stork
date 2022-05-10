@@ -2,7 +2,6 @@ import { css } from "@emotion/css";
 
 export const birdArray = ['gandras', 'erelis', 'peleda', 'sniegena', 'gulbe', 'kalakutas', 'tulzys', 'kekstas', 'varna'];
 export const mainColorArray = ['#9ec26a', '#96a1ff', '#C27D6B', '#80C26B', '#86cbff', '#8a8aff', '#85d195', '#d5a99a', '#baaec2'];
-export const secondaryColorArray = ['#82a157', '#7482f7', '#bf6750', '#6bbf50', '#5db8fc', '#5e5edb', '#5dcf75', '#d4937d', '#ae93bf'];
 export const backgroundArray = [
     'radial-gradient(circle, rgba(158,194,106,1) 0%, rgba(139,172,90,1) 100%)', 
     'radial-gradient(circle, rgba(150,161,255,1) 0%, rgba(131,144,250,1) 100%)', 

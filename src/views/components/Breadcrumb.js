@@ -6,7 +6,7 @@ import {ReactComponent as Active} from '../../assets/btn-triangle-up.svg';
 import {ReactComponent as Passive} from '../../assets/btn-triangle-down.svg';
 
 // Helpers
-import { btn_animation, secondaryColorArray } from "../../config";
+import { btn_animation, birdArray } from "../../config";
 
 function Breadcrumb({birdIndex, handleOnCrumbClick, playPop}) {
     const triangles = [];
@@ -22,7 +22,7 @@ function Breadcrumb({birdIndex, handleOnCrumbClick, playPop}) {
         ${btn_animation};
     `;
     
-    for (let i = 0; i < secondaryColorArray.length; i++) {
+    for (let i = 0; i < birdArray.length; i++) {
         if (i === birdIndex) {
             triangles.push(<Active fill="#5E5E5E" key={i} />);
             continue; 
