@@ -14,6 +14,7 @@ import { backgroundArray, birdArray, birdNames, mainColorArray, customModalStyle
 import Logo from '../../assets/btn-logo-white.svg';
 import Burger from '../../assets/btn-burger.svg';
 import Pop from '../../assets/sfx/pop.mp3';
+import Breadcrumb from "../components/Breadcrumb";
 
 const Bird = () => {
     const [birdIndex, setBird] = useState(0);
@@ -59,6 +60,12 @@ const Bird = () => {
         }
         setBird(birdArray.length - 1);
         setStyle(birdArray.length - 1);
+        return currentBird = birdArray[birdIndex];
+    }
+
+    function handleOnCrumbClick(index) {
+        setBird(index);
+        setStyle(index);
         return currentBird = birdArray[birdIndex];
     }
 
@@ -135,12 +142,11 @@ const Bird = () => {
                     <img src={Burger} alt="Burger" />
                 </button>
                 <Modal isOpen={showModalBurger} onRequestClose={handleCloseModalBurger} contentLabel="Burger Modal" style={customModalStyles}>
-                    <BurgerMenu mainColor={mainColor} handleCloseModalBurger={handleCloseModalBurger}/>
+                    <BurgerMenu mainColor={mainColor} handleCloseModalBurger={handleCloseModalBurger} playPop={playPop}/>
                 </Modal>
             </header>
             <main className={ mainContent }>
-                {/* <h1>△△△△△△△△△△△△△</h1> */}
-                <BirdCanvas currentBird={ currentBird } handleOpenModal={ handleOpenModal } playPop={ playPop } />
+                <BirdCanvas currentBird={ currentBird } handleOpenModal={ handleOpenModal } playPop={playPop} />
                 <h1>{birdNames[birdIndex]}</h1>
                 <Navigator 
                     handleOnBackClick={ handleOnBackClick }
@@ -156,6 +162,7 @@ const Bird = () => {
                 <div className={music}>
                     <AudioPlayer />
                 </div>
+                <Breadcrumb birdIndex={birdIndex} handleOnCrumbClick={handleOnCrumbClick} playPop={playPop} />
             </main>
         </div>
     )
