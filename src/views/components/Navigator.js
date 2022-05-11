@@ -81,7 +81,7 @@ const Navigator = (
                 handleOpenModal();
                 playPop();
             }}>?</button>
-            <Modal isOpen={showModal} onRequestClose={handleCloseModal} contentLabel="Info Modal" style={customModalStyles}>
+            <Modal isOpen={showModal} onRequestClose={handleCloseModal} contentLabel="Info Modal" className={customModalStyles} >
                 <ModalInfo 
                     currentBird={ currentBird } 
                     handleCloseModal={handleCloseModal} 
