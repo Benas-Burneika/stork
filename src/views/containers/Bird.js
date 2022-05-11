@@ -132,7 +132,7 @@ const Bird = () => {
                 }}>
                     <img src={Burger} alt="Burger" />
                 </button>
-                <Modal isOpen={showModalBurger} onRequestClose={handleCloseModalBurger} contentLabel="Burger Modal" style={customModalStyles}>
+                <Modal isOpen={showModalBurger} onRequestClose={handleCloseModalBurger} contentLabel="Burger Modal" className={customModalStyles}>
                     <BurgerMenu mainColor={mainColor} handleCloseModalBurger={handleCloseModalBurger} playPop={playPop}/>
                 </Modal>
             </header>

@@ -15,12 +15,33 @@ export const backgroundArray = [
 ];     
 export const birdNames = ['Gandras', 'Erelis', 'Pelėda', 'Sniegena', 'Gulbė', 'Kalakutas', 'Tulžys', 'Kėkštas', 'Varna'];
 
-export const customModalStyles = {
-    content: {
-      background: '#5E5E5E',
-        color: 'whitesmoke'
-    },
-};
+export const customModalStyles = css`
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid #ccc;
+    overflow: auto;
+    outline: none;
+    padding: 20px;
+    background: #5E5E5E;
+    color: whitesmoke;
+    inset: 40px;
+
+    @media screen and (max-width: 650px) {
+        inset: 10px;
+    }
+`;
+
+export const modalParagraph = css`
+    margin: 0 20%;
+    line-height: 1.5;
+
+    @media screen and (max-width: 650px) {
+        margin: 0;
+    }
+`;
 
 export const btn_animation = css`
     transition: .2s ease-in-out 0s;

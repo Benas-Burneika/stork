@@ -1,4 +1,3 @@
-<svg width="49" height="22" viewBox="0 0 49 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line y1="20" x2="49" y2="20" stroke="white" stroke-width="4"/>
-<line y1="2" x2="49" y2="2" stroke="white" stroke-width="4"/>
+<svg width="51" height="53" viewBox="0 0 51 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.625 15.4584H6.375V19.875H27.625V15.4584ZM44.625 24.2917H40.375V19.875H36.125V15.4584H31.875V19.875H36.125V24.2917H6.375V28.7084H36.125V33.125H31.875V37.5417H36.125V33.125H40.375V28.7084H44.625V24.2917ZM6.375 33.125H27.625V37.5417H6.375V33.125Z" fill="white"/>
 </svg>
