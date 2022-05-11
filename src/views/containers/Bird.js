@@ -11,7 +11,7 @@ import AudioPlayer from "../components/AudioPlayer";
 
 // Helpers
 import { backgroundArray, birdArray, birdNames, mainColorArray, customModalStyles, btn_animation } from "../../config";
-import Logo from '../../assets/btn-logo-white.svg';
+import Logo from '../../assets/main-logo.svg';
 import Burger from '../../assets/btn-burger.svg';
 import Pop from '../../assets/sfx/pop.mp3';
 import Breadcrumb from "../components/Breadcrumb";
@@ -92,22 +92,12 @@ const Bird = () => {
         margin: 10px;
     `;
 
-    const logo = css`
-        display: flex;
-        align-items: center;
-
-        img {
-            transform: scale(0.5);
-            filter: brightness(0) invert(1);
-        }
-    `;
-
     const mainContent = css`
         display: flex;
         flex-direction: column;
         flex: 1;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 10px;
     `;
 
@@ -128,13 +118,14 @@ const Bird = () => {
         ${btn_animation};
     `;
 
+    const birdNameHeading = css`
+        margin: 20px 0;
+    `;
+
     return (
         <div className={container}>
             <header className={header}>
-                <div className={logo}>
-                    <img src={Logo} alt="Logo" />
-                    <h1>Gandras</h1>
-                </div>
+                <img src={Logo} alt="Logo" className={css`width:200px`} />
                 <button className={burger} onClick={() => {
                     handleOpenModalBurger(); 
                     playPop();
@@ -147,7 +138,7 @@ const Bird = () => {
             </header>
             <main className={ mainContent }>
                 <BirdCanvas currentBird={ currentBird } handleOpenModal={ handleOpenModal } playPop={playPop} />
-                <h1>{birdNames[birdIndex]}</h1>
+                <h1 className={birdNameHeading}>{birdNames[birdIndex]}</h1>
                 <Navigator 
                     handleOnBackClick={ handleOnBackClick }
                     handleOnNextClick={ handleOnNextClick }
