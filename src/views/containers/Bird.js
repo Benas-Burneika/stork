@@ -107,7 +107,7 @@ const Bird = () => {
         flex-direction: column;
         flex: 1;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 10px;
     `;
 
@@ -126,6 +126,10 @@ const Bird = () => {
         font-size: 24px;
         color: ${mainColor};
         ${btn_animation};
+    `;
+
+    const birdNameHeading = css`
+        margin: 20px 0;
     `;
 
     return (
@@ -147,7 +151,7 @@ const Bird = () => {
             </header>
             <main className={ mainContent }>
                 <BirdCanvas currentBird={ currentBird } handleOpenModal={ handleOpenModal } playPop={playPop} />
-                <h1>{birdNames[birdIndex]}</h1>
+                <h1 className={birdNameHeading}>{birdNames[birdIndex]}</h1>
                 <Navigator 
                     handleOnBackClick={ handleOnBackClick }
                     handleOnNextClick={ handleOnNextClick }
