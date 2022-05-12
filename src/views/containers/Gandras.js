@@ -1,9 +1,34 @@
-import { modalParagraph } from "../../config";
+import { modalParagraph, modalParagraphAuthor } from "../../config";
 
 function Gandras() {
   return (
     <div>
-      <p className={modalParagraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec vulputate diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vestibulum nulla eget lorem consequat, a interdum sapien aliquam. Aliquam auctor ante mauris, vitae ornare justo ullamcorper nec. Sed porttitor condimentum nisi, ut interdum ligula dapibus non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam mauris leo, pretium nec bibendum nec, blandit a eros. Donec dapibus, sem auctor aliquam bibendum, metus turpis pellentesque elit, quis tristique diam enim sed justo. Aenean elit quam, accumsan ac placerat sit amet, luctus bibendum lorem. Donec posuere pretium elit. Pellentesque sodales tincidunt velit. Praesent vehicula tempus neque non gravida. Nunc sit amet egestas tortor. Maecenas eget nunc vitae augue pellentesque mollis. Phasellus blandit magna nibh, nec ullamcorper augue facilisis quis. Donec semper et ante ut placerat.</p>
+      <p className={modalParagraphAuthor}>
+      Marius Čepulis, gamtos fotografas
+      </p>
+      <br />
+      <p className={modalParagraph}>
+      „Tokia pavadinimų įvairove joks kitas sparnuotis negali pasidžiaugti : busilas, starkas, starkus, gužas, gužutis, bacionas, garnys, bacėnas, didutis. O kiek visokių mitų, legendų ir pasakojimų apie jį pripilta. Kad neša vaikus, tai čia viskas aišku – per Joninės prisidavėt ir natūralu, kad po 9 mėnesių per Gandrines gandrai prie jūsų namo pasirodė. 
+      </p>
+      <br />
+      <p className={modalParagraph}>
+      Bet, žinoma, gandras lietuviui visada buvo laimės simbolis. Žmonės tikėjo, kad jis neš laimę, jei tik įsikurs sodyboje (ir nelaimę, jei paliks lizdą). Tikėjo, kad jei pavasarį pamatai pirma skrendantį gandrą – ištekėsi, tupintį – liksi tupėti. Ir kūlio verstis būtinai reikia gandrą pamačius. Tiesa, nežinau kam, – gal tiesiog fizinis aktyvumas sveika? 
+      </p>
+      <br />
+      <p className={modalParagraph}>
+      Baltasis gandras tikrai nėra vien mūsų nacionalinis paukštis. Jis labai gerbiamas ir Vokietijoje, Lenkijoje, Baltarusijoje, Ukrainoje, Armėnijoje.
+      </p>
+      <br />
+      <p className={modalParagraph}>
+      Ir pas latvius be jo niekada neateitų pavasaris, nes mūsų nacionalinis paukštis ant uodegos atneša brolių latvių nacionalinį paukštį – baltąją kielę, kad ši ledus baigtų išspardyti (matot, net paukščiai vienas kitam padeda, o ne konkuruoja).“
+      </p>
+      <br />
+      <br />
+      <br />
+      <p className={modalParagraphAuthor}>
+      Pilną straipsnį skaitykite LRT tinklalapyje:
+        <a href="https://www.lrt.lt/naujienos/gyvenimas/13/916126/marius-cepulis-kodel-lietuviskas-gandras-atnesa-pavasari-latvijon-komentaras" target="_blank" rel="noopener noreferrer" > Marius Čepulis. Kodėl lietuviškas gandras atneša pavasarį Latvijon?</a> 
+      </p>
     </div>
   );
 }

@@ -1,9 +1,22 @@
-import { modalParagraph } from "../../config";
+import { modalParagraph, modalParagraphAuthor} from "../../config";
 
 function Peleda() {
   return (
     <div>
-      <p className={modalParagraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec vulputate diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vestibulum nulla eget lorem consequat, a interdum sapien aliquam. Aliquam auctor ante mauris, vitae ornare justo ullamcorper nec. Sed porttitor condimentum nisi, ut interdum ligula dapibus non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam mauris leo, pretium nec bibendum nec, blandit a eros. Donec dapibus, sem auctor aliquam bibendum, metus turpis pellentesque elit, quis tristique diam enim sed justo. Aenean elit quam, accumsan ac placerat sit amet, luctus bibendum lorem. Donec posuere pretium elit. Pellentesque sodales tincidunt velit. Praesent vehicula tempus neque non gravida. Nunc sit amet egestas tortor. Maecenas eget nunc vitae augue pellentesque mollis. Phasellus blandit magna nibh, nec ullamcorper augue facilisis quis. Donec semper et ante ut placerat.</p>
+      <p className={modalParagraphAuthor}>
+      Marius Čepulis, gamtos fotografas
+      </p>
+      <br />
+      <p className={modalParagraph}>
+      „Sakysit, pelėdos yra miškų paukščiai? Nė velnio. Naminė pelėda tam ir pavadinta namine, kad gyvena netoli žmogaus, kartais kuriasi net pastatų kaminuose. Atėnės palydovė pelėdikė gyvena tik namų pastogėse, palėpėse, pastatų plyšiuose. Tiesa, ji reta pas mus. Taip pat reta ir liepsnotoji pelėda, kuri irgi mielai kuriasi klėčių, tvartų palėpėse. Didysis apuokas ir tas pradeda kraustytis į miestus ir sukti lizdus ant daugiaaukšių, nes kas kitas mums balandžius ir kates išgaudys?“
+      </p>
+      <br />
+      <br />
+      <br />
+      <p className={modalParagraphAuthor}>
+      Pilną straipsnį skaitykite LRT tinklalapyje:
+        <a href="https://www.lrt.lt/naujienos/gyvenimas/13/1185341/marius-cepulis-sparnuotieji-musu-kaimynai" target="_blank" rel="noopener noreferrer" > Marius Čepulis. Sparnuotieji mūsų kaimynai</a> 
+      </p>
     </div>
   );
 }

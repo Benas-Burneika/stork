@@ -52,6 +52,22 @@ export const modalParagraph = css`
     }
 `;
 
+export const modalParagraphAuthor = css`
+    margin: 0 20%;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: italic;
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    @media screen and (max-width: 650px) {
+        margin: 0;
+    }
+`;
+
 export const btn_animation = css`
     transition: .2s ease-in-out 0s;
     &:active {

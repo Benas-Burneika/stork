@@ -1,9 +1,35 @@
-import { modalParagraph } from "../../config";
+import { modalParagraph, modalParagraphAuthor } from "../../config";
 
 function Erelis() {
   return (
     <div>
-      <p className={modalParagraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec vulputate diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vestibulum nulla eget lorem consequat, a interdum sapien aliquam. Aliquam auctor ante mauris, vitae ornare justo ullamcorper nec. Sed porttitor condimentum nisi, ut interdum ligula dapibus non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam mauris leo, pretium nec bibendum nec, blandit a eros. Donec dapibus, sem auctor aliquam bibendum, metus turpis pellentesque elit, quis tristique diam enim sed justo. Aenean elit quam, accumsan ac placerat sit amet, luctus bibendum lorem. Donec posuere pretium elit. Pellentesque sodales tincidunt velit. Praesent vehicula tempus neque non gravida. Nunc sit amet egestas tortor. Maecenas eget nunc vitae augue pellentesque mollis. Phasellus blandit magna nibh, nec ullamcorper augue facilisis quis. Donec semper et ante ut placerat.</p>
+      <p className={modalParagraphAuthor}>
+      Šilutės rajono savivaldybė, vystydama projektą „Pažink Pamario kraštą keliaudamas paukščių keliu“ ir skatindama ornitologinį turizmą, kartu su Šilutės turizmo informacijos centru kviečia susipažinti su saugomais plėšriaisiais paukščiais, gyvenančiais Nemuno deltos regione, ir atvykti jų stebėti.
+      </p>
+      <br />
+      <p className={modalParagraph}>
+      „Elegantiškai sklandantys, žemyn nulenkę snapus ir riestais aštriais nagais savo grobį gaudantys paukščiai nejučia priverčia pakelti akis į dangų. Vienu metu apima ir atsargi pagarba, ir noras tiesiog grožėtis. Ar daug kartų jums yra tekę savo akimis stebėti plėšriuosius paukščius?
+
+      </p>
+      <br />
+      <p className={modalParagraph}>
+      Sausgalvių pievų botaniniame-zoologiniame draustinyje visus metus galima pamatyti į Lietuvos raudonąją knygą įtrauktą jūrinį erelį.
+      </p>
+      <br />
+      <p className={modalParagraph}>
+      Šis mūsų šalies draustinis yra jūrinių erelių pamėgta vieta. Skrendantį jūrinį erelį nesunkiai atskirsite nuo kitų erelių dėl įspūdingo dydžio, tiesaus lyg lenta silueto, tarsi pirštuotų, 2,5 metro ilgio sparnų, geltono snapo ir baltos uodegos.“
+      </p>
+      <br />
+      <p className={modalParagraph}>
+
+      </p>
+      <br />
+      <br />
+      <br />
+      <p className={modalParagraphAuthor}>
+      Pilną straipsnį skaitykite Lrytas.lt tinklalapyje:
+        <a href="https://www.lrytas.lt/gamta/fauna/2021/04/21/news/pamario-kraste-isskirtine-proga-pamatyti-plesriuosius-paukscius-medziokles-ypatumai-gniauzia-kvapa-19095755" target="_blank" rel="noopener noreferrer" > Pamario krašte – išskirtinė proga pamatyti plėšriuosius paukščius</a> 
+      </p>
     </div>
   );
 }
