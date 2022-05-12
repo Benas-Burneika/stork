@@ -37,8 +37,8 @@ const containerLines = css`
   return (
     <div className={contentContainer}>
         <div className={containerLines}>
-            <Triangle fill={mainColor} />
-            <button onClick={() => setCurrentView("Apie")}>Apie Projekta</button>
+            <Triangle fill={mainColor} onClick={() => setCurrentView("Apie")} />
+            <button onClick={() => setCurrentView("Apie")}>Apie Projektą</button>
         </div>
         <div className={containerLines}>
             <Triangle fill={mainColor} />
