@@ -54,13 +54,20 @@ export const modalParagraph = css`
 
 export const btn_animation = css`
     transition: .2s ease-in-out 0s;
-    &:hover {
-        transform: scale(1.25);
-    }
     &:active {
-        transform: scale(1);
-        &:after {
-            transform: scale(0);
+        transform: scale(1.2);
+        transition: .1s;
+    }
+
+    @media screen and (min-width: 650px) {
+        &:hover {
+            transform: scale(1.25);
+        }
+        &:active {
+            transform: scale(1);
+            &:after {
+                transform: scale(0);
+            }
         }
     }
 `;
