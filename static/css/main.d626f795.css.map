@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.d626f795.css","mappings":"AAAA,EACI,QAAS,CACT,SACJ,CAEA,KACI,aAAiB,CACjB,mCACJ","sources":["views/styles/App.css"],"sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n}\n\n.App {\n    color: whitesmoke;\n    font-family: 'Josefin Sans', sans-serif;\n}"],"names":[],"sourceRoot":""}
