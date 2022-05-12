@@ -34,9 +34,18 @@ export const customModalStyles = css`
     }
 `;
 
+export const removeBtnStyle = css`
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+`;
+
 export const modalParagraph = css`
     margin: 0 20%;
     line-height: 1.5;
+    font-size: 20px;
 
     @media screen and (max-width: 650px) {
         margin: 0;

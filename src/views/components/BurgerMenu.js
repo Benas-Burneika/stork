@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { css } from "@emotion/css";
 import PropTypes from "prop-types";
 
@@ -8,18 +9,24 @@ import {ReactComponent as Close} from '../../assets/btn-close.svg';
 // Helpers
 import { btn_animation } from "../../config";
 
-function BurgerMenu({handleCloseModalBurger, mainColor}) {
-    const container = css`
-      display: flex;
-      flex-direction: column;
-    `;
+// Containers
+import BurgerContent from "../containers/BurgerContent";
+import ApieProjekta from "../containers/ApieProjekta";
 
-    const modalClose = css`
-      display: flex;
-      justify-content: end;
+function BurgerMenu({handleCloseModalBurger, mainColor}) {
+  const [currentView, setCurrentView] = useState("BurgerContent");
+
+  const container = css`
+    display: flex;
+    flex-direction: column;
   `;
 
-    const closeBtn = css`
+  const modalClose = css`
+    display: flex;
+    justify-content: end;
+  `;
+
+  const closeBtn = css`
     border: none;
     background: none;
     padding: 0;
@@ -44,11 +51,12 @@ function BurgerMenu({handleCloseModalBurger, mainColor}) {
         <div className={modalLogoContainer}>
             <Logo stroke={mainColor} />
         </div>
-        <div>
-            <h1>Apie Projekta</h1>
-            <h1>Github projekto kodas</h1>
-            <h1>Triangula</h1>
-        </div>
+        {
+          currentView === "Apie" ?
+            <ApieProjekta />
+          :
+            <BurgerContent setCurrentView={setCurrentView} mainColor={mainColor} />
+        }
     </div>
   );
 }
