@@ -13,7 +13,7 @@ export const backgroundArray = [
     'radial-gradient(circle, rgba(213,169,154,1) 0%, rgba(180,139,125,1) 100%)', 
     'radial-gradient(circle, rgba(186,174,194,1) 0%, rgba(156,146,163,1) 100%)',
 ];     
-export const birdNames = ['Gandras', 'Erelis', 'Pelėda', 'Sniegena', 'Gulbė', 'Kalakutas', 'Tulžys', 'Kėkštas', 'Varna'];
+export const birdNames = ['Baltasis Gandras', 'Jūrinis Erelis', 'Didysis Apuokas', 'Juodagalvė Sniegena', 'Gulbė Nebylė', 'Laukinis Kalakutas', 'Paprastasis Tulžys', 'Eurazinis Kėkštas', 'Paprastasis Kovas'];
 
 export const customModalStyles = css`
     position: absolute;
