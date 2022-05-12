@@ -1,4 +1,3 @@
-import { css } from "@emotion/css";
 import { modalParagraph } from "../../config";
 
 function Gandras() {
