@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stork/static/css/main.f2a0b1c2.css",
-    "main.js": "/stork/static/js/main.8f90fe70.js",
+    "main.js": "/stork/static/js/main.97273bab.js",
     "static/media/background-music.mp3": "/stork/static/media/background-music.1a1d266f2c39fae723b6.mp3",
     "static/media/kalakutas.svg": "/stork/static/media/kalakutas.a07b8499c0f0ade9ef12eb1fb146285d.svg",
     "static/media/peleda.svg": "/stork/static/media/peleda.dc56dd11889a04fc46a25ba67b1590a4.svg",
@@ -24,10 +24,10 @@
     "static/media/btn-triangle-up.svg": "/stork/static/media/btn-triangle-up.737f0f78d266da8fd1268adaa73fdea9.svg",
     "static/media/btn-next.svg": "/stork/static/media/btn-next.9201fea72114e992aad0496d43137b2b.svg",
     "main.f2a0b1c2.css.map": "/stork/static/css/main.f2a0b1c2.css.map",
-    "main.8f90fe70.js.map": "/stork/static/js/main.8f90fe70.js.map"
+    "main.97273bab.js.map": "/stork/static/js/main.97273bab.js.map"
   },
   "entrypoints": [
     "static/css/main.f2a0b1c2.css",
-    "static/js/main.8f90fe70.js"
+    "static/js/main.97273bab.js"
   ]
 }
