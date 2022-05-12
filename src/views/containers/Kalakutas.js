@@ -3,7 +3,19 @@ import { modalParagraph } from "../../config";
 function Kalakutas() {
   return (
     <div>
-      <p className={modalParagraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec vulputate diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vestibulum nulla eget lorem consequat, a interdum sapien aliquam. Aliquam auctor ante mauris, vitae ornare justo ullamcorper nec. Sed porttitor condimentum nisi, ut interdum ligula dapibus non. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam mauris leo, pretium nec bibendum nec, blandit a eros. Donec dapibus, sem auctor aliquam bibendum, metus turpis pellentesque elit, quis tristique diam enim sed justo. Aenean elit quam, accumsan ac placerat sit amet, luctus bibendum lorem. Donec posuere pretium elit. Pellentesque sodales tincidunt velit. Praesent vehicula tempus neque non gravida. Nunc sit amet egestas tortor. Maecenas eget nunc vitae augue pellentesque mollis. Phasellus blandit magna nibh, nec ullamcorper augue facilisis quis. Donec semper et ante ut placerat.</p>
+      <br />
+      <p className={modalParagraph}>
+      Kalakuto pavadinimai daugelyje kalbų reiškia vis skirtingas geografines vietas; pvz., angl. turkey, turk. hindi, portug. peru. Lietuviškas paukščio vardas kilęs nuo Kalikuto uosto. Spėjama, kad tokia painiava kilo dėl to, kad šis paukštis buvo supainiotas su giminingu paukščiu patarška. Prekybą šiais paukščiais daugiausia kontroliavo Osmanai (Turkija), o tie paukščiai gabenti iš Madagaskaro. Indijos pavadinimas su gyvūnu susijęs greičiausiai dėl Amerikos laikymo Azijos (Indijos) dalimi.
+      </p>
+      <br/>
+      <p className={modalParagraph}>
+      Kalakutai yra didžiausi naminiai paukščiai. Kojos ilgos, uodega plati, sparnai trumpi, ant galvos ir kaklo – odos išaugos. Plunksnos tankios. 
+      </p>
+      <br />
+      <p className={modalParagraph}>
+      Lietuvoje kalakutai iš pradžių buvo laikomi tik dvaruose, vėliau juos pradėjo auginti ir valstiečiai. Buvo auginami vietiniai (maži, menko produktyvumo) kalakutai. Kalakutės naudotos viščiukams ir kitiems naminiams paukščiams perinti. Nuo 1937 pradėta auginti bronzinius plačiakrūtinius kalakutus, įsteigta jų veislinių ūkių.
+      </p>
+      <br />
     </div>
   );
 }
