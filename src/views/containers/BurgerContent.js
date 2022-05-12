@@ -7,7 +7,7 @@ import {ReactComponent as Triangle } from '../../assets/btn-next.svg';
 // Helpers
 import { removeBtnStyle } from '../../config';
 
-function BurgerContent({setCurrentView}) {
+function BurgerContent({setCurrentView, mainColor}) {
 const contentContainer = css`
     margin: 50px auto;
     height: 200px;
@@ -37,15 +37,15 @@ const containerLines = css`
   return (
     <div className={contentContainer}>
         <div className={containerLines}>
-            <Triangle />
+            <Triangle fill={mainColor} />
             <button onClick={() => setCurrentView("Apie")}>Apie Projekta</button>
         </div>
         <div className={containerLines}>
-            <Triangle />
+            <Triangle fill={mainColor} />
             <a href="https://github.com/Benas-Burneika/stork" target="_blank" rel="noopener noreferrer" >Projekto Kodas</a>
         </div>
         <div className={containerLines}>
-            <Triangle />
+            <Triangle fill={mainColor} />
             <a href="https://github.com/rh12503/triangula" target="_blank" rel="noopener noreferrer" >Triangula</a>
         </div>
     </div>
@@ -54,7 +54,7 @@ const containerLines = css`
   
 BurgerContent.protoTypes = {
     setCurrentView: PropTypes.func.isRequired,
+    mainColor: PropTypes.string.isRequired,
 }
 
-  export default BurgerContent;
-  
+export default BurgerContent;

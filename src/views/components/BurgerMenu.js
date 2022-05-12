@@ -55,7 +55,7 @@ function BurgerMenu({handleCloseModalBurger, mainColor}) {
           currentView === "Apie" ?
             <ApieProjekta />
           :
-            <BurgerContent setCurrentView={setCurrentView} />
+            <BurgerContent setCurrentView={setCurrentView} mainColor={mainColor} />
         }
     </div>
   );

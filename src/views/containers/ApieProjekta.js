@@ -23,5 +23,4 @@ ApieProjekta.protoTypes = {
     setCurrentView: PropTypes.func.isRequired,
 }
 
-  export default ApieProjekta;
-  
+export default ApieProjekta;
