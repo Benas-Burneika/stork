@@ -1,6 +1,11 @@
+import { css } from "@emotion/css";
+import PropTypes from "prop-types";
 import { modalParagraph, modalParagraphAuthor } from "../../config";
 
-function Varna() {
+function Varna({mainColor}) {
+  const importantColor = css`
+    color: ${mainColor};
+  `;
   return (
     <div>
       <p className={modalParagraphAuthor}>
@@ -8,7 +13,7 @@ function Varna() {
       </p>
       <br />
       <p className={modalParagraph}>
-      „Kažkada tai buvo labai mylimas ir gerbiamas paukštis, kuris tapo vienu nekenčiamiausių sparnuočių. Dabar jis baigiamas išnaikinti ir dar po keleto metų trauksim jį į Raudonąją knygą.
+      „<span className={importantColor}>Kažkada tai buvo labai mylimas ir gerbiamas paukštis</span>, kuris tapo vienu nekenčiamiausių sparnuočių. Dabar jis baigiamas išnaikinti ir dar po keleto metų trauksim jį į <span className={importantColor}>Raudonąją knygą.</span>
       </p>
       <br/>
       <p className={modalParagraph}>
@@ -20,17 +25,21 @@ function Varna() {
       </p>
       <br />
       <p className={modalParagraph}>
-      Kovų balsas kiek kitoks pratisas – khraa. Ir tai vieninteliai mūsų varniniai, kurie peri didelėmis kolonijomis (dėl ko žmonėms ir nepatinka). Anksčiau kovai išskrisdavo į šiltesnius kraštus, dabar nemaža dalis žiemoja.“
+      Kovų balsas kiek kitoks pratisas – <span className={importantColor}>khraa</span>. Ir tai vieninteliai mūsų varniniai, kurie peri didelėmis kolonijomis (dėl ko žmonėms ir nepatinka). Anksčiau kovai išskrisdavo į šiltesnius kraštus, dabar nemaža dalis žiemoja.“
       </p>
       <br />
       <br />
       <br />
       <p className={modalParagraphAuthor}>
       Pilną straipsnį skaitykite LRT tinklalapyje:
-        <a href="https://www.lrt.lt/naujienos/gyvenimas/13/1118344/marius-cepulis-apie-varnas" target="_blank" rel="noopener noreferrer" > Marius Čepulis. Apie varnas</a> 
+        <a href="https://www.lrt.lt/naujienos/gyvenimas/13/1118344/marius-cepulis-apie-varnas" target="_blank" rel="noopener noreferrer" > <span className={importantColor}>Marius Čepulis. Apie varnas</span></a> 
       </p>
     </div>
   );
+}
+
+Varna.propTypes = {
+  mainColor: PropTypes.string.isRequired
 }
 
 export default Varna;

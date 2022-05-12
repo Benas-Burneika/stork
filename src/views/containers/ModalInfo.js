@@ -92,8 +92,8 @@ function ModalInfo({currentBird, handleCloseModal, currentBirdName, mainColor}) 
             <Logo stroke={mainColor} />
         </div>
         <div className={modalInfo}>
-            <h2 className={css`text-align: center; margin: 20px 0 50px 0;`}>{currentBirdName.toUpperCase()}</h2>
-            <SelectedBird />
+            <h2 className={css`text-align: center; margin: 20px 0 50px 0; color: ${mainColor}`}>{currentBirdName.toUpperCase()}</h2>
+            <SelectedBird mainColor={mainColor} />
         </div>
       
     </div>
